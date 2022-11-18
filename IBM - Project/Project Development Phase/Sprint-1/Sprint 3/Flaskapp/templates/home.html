@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>home</title>
+    <!-- <link rel="stylesheet" href="style/home.css"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+    <img class="backimg" src="{{url_for('static',filename='css/Home-bg2.jpeg')}}">
+    <header>
+        <h3>AI based Natural Disaster Analysis</h3>
+        <div class="nav">
+            <div class="nav-lis">
+                <ul class="nav-li" style="margin-left: 38%;">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-bg-danger rounded-3" aria-current="true" href="home.html" style="font-size: 24px;">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="intro.html" style="font-size: 24px;">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upload.html" style="font-size: 24px;">Webcam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Image box -->
+    <section class="secc">
+        <table>
+            <tr>
+                <td>
+                    <div class="img-box">
+                        <div class="imgc">
+                            <img src="{{url_for('static',filename='css/Cyclone.jpg')}}" width="400px" height="290px">
+                            <div class="cont">
+                                <p><span style="font-weight:bolder; font-size: large;">Cyclones</span> are large revolving tropical storms caused by winds blowing around a central area of low atmospheric pressure.</p>
+                                <a href="https://en.wikipedia.org/wiki/Cyclone" class="btn btn-primary">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-box">
+                        <div class="imgc">
+                            <img src="{{url_for('static',filename='css/Earthquake.jpg')}}" width="400px" height="290px">
+                            <div class="cont">
+                                <p><span style="font-weight:bolder; font-size: large;">Earthquake</span> is what happens when two blocks of the earth suddenly slip past one another. The surface where they slip is called the fault or fault plane.</p>
+                                <a href="https://en.wikipedia.org/wiki/Earthquake" class="btn btn-primary">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="img-box">
+                        <div class="imgc">
+                            <img src="{{url_for('static',filename='css/Flood.jpg')}}" width="400px" height="290px">
+                            <div class="cont">
+                                <p><span style="font-weight:bolder; font-size: large;">Flood</span> is an overflow of water (or rarely other fluids) that submerges land that is usually dry. ; Flooding may occur as an overflow of water from water bodies,</p>
+                                <a href="https://en.wikipedia.org/wiki/Flood" class="btn btn-primary">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-box">
+                        <div class="imgc">
+                            <img src="{{url_for('static',filename='css/Wildfire.jpg')}}" width="400px" height="290px">
+                            <div class="cont">
+                                <p><span style="font-weight:bolder; font-size: large;">Wildfire</span> ,forest fire, bushfire, wildland fire or rural fire is an unplanned, uncontrolled and unpredictable fire in an area of combustible vegetation</p>
+                                <a href="https://en.wikipedia.org/wiki/Wildfire" class="btn btn-primary">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+
+</html>
